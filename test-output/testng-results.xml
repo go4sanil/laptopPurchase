@@ -1,25 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-05T16:13:41Z" name="Default suite" finished-at="2023-01-05T16:14:58Z" duration-ms="76852">
+  <suite started-at="2023-03-06T16:19:55Z" name="Suite" finished-at="2023-03-06T16:21:07Z" duration-ms="72020">
     <groups>
     </groups>
-    <test started-at="2023-01-05T16:13:41Z" name="Default test" finished-at="2023-01-05T16:14:58Z" duration-ms="76852">
-      <class name="sanil.laptopPurchase.test.LaptopsAndNotebooksPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:sanil.laptopPurchase.test.LaptopsAndNotebooksPageTest@338c99c8]" started-at="2023-01-05T16:13:41Z" name="setUp" finished-at="2023-01-05T16:13:50Z" duration-ms="9313" status="PASS">
+    <test started-at="2023-03-06T16:19:55Z" name="Test" finished-at="2023-03-06T16:21:07Z" duration-ms="72020">
+      <class name="sanil.laptopPurchase.test.MyAccountPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sanil.laptopPurchase.test.MyAccountPageTest@2421cc4]" started-at="2023-03-06T16:20:37Z" name="setUp" finished-at="2023-03-06T16:20:51Z" duration-ms="14511" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyAlertBannerForInvalidLoginCredentials()[pri:0, instance:sanil.laptopPurchase.test.LaptopsAndNotebooksPageTest@338c99c8]" started-at="2023-01-05T16:13:50Z" name="verifyAlertBannerForInvalidLoginCredentials" finished-at="2023-01-05T16:14:57Z" duration-ms="66509" status="PASS">
+        <test-method signature="verifyAlertBannerForInvalidLoginCredentials()[pri:0, instance:sanil.laptopPurchase.test.MyAccountPageTest@2421cc4]" started-at="2023-03-06T16:20:51Z" name="verifyAlertBannerForInvalidLoginCredentials" finished-at="2023-03-06T16:20:54Z" duration-ms="2700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAlertBannerForInvalidLoginCredentials -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:sanil.laptopPurchase.test.LaptopsAndNotebooksPageTest@338c99c8]" started-at="2023-01-05T16:14:57Z" name="teardown" finished-at="2023-01-05T16:14:58Z" duration-ms="1009" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:sanil.laptopPurchase.test.MyAccountPageTest@2421cc4]" started-at="2023-03-06T16:20:54Z" name="teardown" finished-at="2023-03-06T16:20:55Z" duration-ms="1336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- sanil.laptopPurchase.test.MyAccountPageTest -->
+      <class name="sanil.laptopPurchase.test.MyWishListTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sanil.laptopPurchase.test.MyWishListTest@30c93896]" started-at="2023-03-06T16:20:55Z" name="setUp" finished-at="2023-03-06T16:21:01Z" duration-ms="5885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAddingProductToWishList()[pri:0, instance:sanil.laptopPurchase.test.MyWishListTest@30c93896]" started-at="2023-03-06T16:21:01Z" name="verifyAddingProductToWishList" finished-at="2023-03-06T16:21:07Z" duration-ms="5663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingProductToWishList -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:sanil.laptopPurchase.test.MyWishListTest@30c93896]" started-at="2023-03-06T16:21:07Z" name="teardown" finished-at="2023-03-06T16:21:07Z" duration-ms="553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- sanil.laptopPurchase.test.MyWishListTest -->
+      <class name="sanil.laptopPurchase.test.LaptopsAndNotebooksPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sanil.laptopPurchase.test.LaptopsAndNotebooksPageTest@7a220c9a]" started-at="2023-03-06T16:20:12Z" name="setUp" finished-at="2023-03-06T16:20:25Z" duration-ms="12746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAlertBannerForInvalidLoginCredentials()[pri:0, instance:sanil.laptopPurchase.test.LaptopsAndNotebooksPageTest@7a220c9a]" started-at="2023-03-06T16:20:25Z" name="verifyAlertBannerForInvalidLoginCredentials" finished-at="2023-03-06T16:20:36Z" duration-ms="11046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertBannerForInvalidLoginCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:sanil.laptopPurchase.test.LaptopsAndNotebooksPageTest@7a220c9a]" started-at="2023-03-06T16:20:36Z" name="teardown" finished-at="2023-03-06T16:20:37Z" duration-ms="527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- sanil.laptopPurchase.test.LaptopsAndNotebooksPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="sanil.laptopPurchase.test.AccountLoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sanil.laptopPurchase.test.AccountLoginPageTest@68702e03]" started-at="2023-03-06T16:19:55Z" name="setUp" finished-at="2023-03-06T16:20:10Z" duration-ms="14462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAlertBannerForInvalidLoginCredentials()[pri:0, instance:sanil.laptopPurchase.test.AccountLoginPageTest@68702e03]" started-at="2023-03-06T16:20:10Z" name="verifyAlertBannerForInvalidLoginCredentials" finished-at="2023-03-06T16:20:12Z" duration-ms="1841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertBannerForInvalidLoginCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:sanil.laptopPurchase.test.AccountLoginPageTest@68702e03]" started-at="2023-03-06T16:20:12Z" name="teardown" finished-at="2023-03-06T16:20:12Z" duration-ms="725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- sanil.laptopPurchase.test.AccountLoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
