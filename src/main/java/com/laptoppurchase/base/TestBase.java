@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 public class TestBase {
 
 	public static WebDriver driver;
-	public Browsers DEFAULT_BROWSER = Browsers.GOOGLE_CHROME;
+	public Browsers DEFAULT_BROWSER = Browsers.FIREFOX;
 
 	public void launchBrowser() {
 
