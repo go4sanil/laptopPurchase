@@ -21,8 +21,8 @@ public class TestBase {
 
     	switch (DEFAULT_BROWSER) {
 		case GOOGLE_CHROME:
-			//WebDriverManager.chromedriver().setup();
-			System.setProperty("webdriver.chrome.driver","/home/sanil/Desktop/chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
+			//System.setProperty("webdriver.chrome.driver","/home/sanil/Desktop/chromedriver.exe");
 
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("start-maximized"); // open Browser in maximized mode
