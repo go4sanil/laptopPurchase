@@ -1,6 +1,5 @@
 package com.laptoppurchase.base;
 
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,23 +13,24 @@ import java.util.concurrent.TimeUnit;
 
 public class TestBase {
 
-    public static WebDriver driver;
-    public Browsers DEFAULT_BROWSER = Browsers.GOOGLE_CHROME;
+	public static WebDriver driver;
+	public Browsers DEFAULT_BROWSER = Browsers.GOOGLE_CHROME;
 
-    public void launchBrowser() {
+	public void launchBrowser() {
 
-    	switch (DEFAULT_BROWSER) {
+		switch (DEFAULT_BROWSER) {
 		case GOOGLE_CHROME:
-			WebDriverManager.chromedriver().setup();
-			//System.setProperty("webdriver.chrome.driver","/home/sanil/Desktop/chromedriver.exe");
-
 			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--no-sandbox"); // Bypass OS security model
+
+			WebDriverManager.chromedriver().setup();
+			// System.setProperty("webdriver.chrome.driver","/home/sanil/Desktop/chromedriver.exe");
+
 			options.addArguments("start-maximized"); // open Browser in maximized mode
 			options.addArguments("disable-infobars"); // disabling infobars
 			options.addArguments("--disable-extensions"); // disabling extensions
-			//options.addArguments("--disable-gpu"); // applicable to windows os only
+			// options.addArguments("--disable-gpu"); // applicable to windows os only
 			options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-			options.addArguments("--no-sandbox"); // Bypass OS security model
 			driver = new ChromeDriver(options);
 			break;
 
@@ -47,22 +47,20 @@ public class TestBase {
 		default:
 			System.out.println("Not a valid browser");
 			break;
-        }
-    	
+		}
 
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        driver.manage().window().maximize();
- 
-        // Launch a page
-        driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
+		driver.manage().window().maximize();
 
-    }
+		// Launch a page
+		driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
 
-    public void quitBrowser() {
+	}
 
-        driver.quit();
-    }
+	public void quitBrowser() {
+
+		driver.quit();
+	}
 
 }
